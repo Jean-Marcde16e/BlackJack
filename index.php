@@ -15,9 +15,9 @@ $dealer->addPlayer(new Player('Dealer'));
 $add = true;
 
 while ($add == true) {
-    $answer = (string)readline("Speler toevoegen (y) of niet (n) ... ");
+    $answer = (string)readline("Add player (y) or don't (n) ... ");
     if ($answer == "y") {
-        $name = (string)readline("Wat is je naam? ... ");
+        $name = (string)readline("What is your name? ... ");
         $dealer->addPlayer(new Player($name));
     } elseif ($answer == "n") {
         $add = false;
